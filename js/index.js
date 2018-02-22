@@ -1,0 +1,15 @@
+$(function(){
+	$('.game_start').click(function(){
+		$('.game_background').css('display','none');
+		$('.black_num1').css('display','block');
+	})
+	$('.jijie_btn').click(function(){
+		$('.black_num1').css('display','none');
+		$('.jijie_content').css('display','block');
+		$('.hero_num1').css('display','block');
+	})
+	$('.jiantou').click(function(){
+		$('.jijie_content').css('display','none');
+		$('.game_map_tips').css('display','block');
+	})
+})
