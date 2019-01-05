@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>黑豹游戏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+ 	 <meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/hero6.css">
+	<script src="js/font.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.qrcode.min.js"></script> 
+	<script src="js/zepto.min.js"></script>
+	<script src="js/prize.js"></script>
+	<style>
+		/*兑奖页面*/
+		.dui_prize{
+		  width: 100%;
+		  height: 100%;
+		  background:url(images/black_bao2.jpg) no-repeat;
+		  background-size: 100% 100%;
+		  position: relative;
+		}
+		.dui_prize .dui_prize_logo{
+		  width: 6.15rem;
+		  height: 2.08rem;
+		  background-size: 100% 100%;
+		  position: absolute;
+		  left:50%;
+		  margin-left: -3.075rem;
+		  top:0.8rem;
+		}
+		.dui_prize .dui_prize_text1{
+		  width:100%;
+		  height:3.2rem;
+		  background:url(images/titile.png) no-repeat;
+		  background-size: 100% 100%;
+		  position: absolute;
+		  top:3.2rem;
+		}
+		.dui_prize .weima_area{
+		  width: 10.15rem;
+		  height:5.5rem;
+		  background:url(images/duihuansm.png) no-repeat;
+		  background-size: 100% 100%;
+		  position: absolute;
+		  left: 50%;
+		  margin-left:-5.075rem;
+		  bottom: 1rem;
+		}
+		.dui_prize .yan_zheng{
+		  width: 9.45rem;
+		  height:1.28rem;
+		  background:url(images/yanzheng_btn.png) no-repeat;
+		  background-size: 100% 100%;
+		  position: absolute;
+		  left: 50%;
+		  margin-left:-4.725rem;
+		  top:7.5rem;
+		}
+		.yan_zheng .yanzheng_box{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			z-index: 100;
+		}
+		.yan_zheng .yanzheng_box .number{
+			width: 7.2rem;
+			height:1.35rem;
+			float: left;
+			margin-left: 0.1rem;
+			font-size: 0.7rem;
+			outline: none;
+  			border: none;
+  			background:none; 
+  			color: #817464;
+  			padding-left: 0.2rem;
+		}
+		.yan_zheng .yanzheng_box .yanzheng_btn{
+			width: 2rem;
+			height: 1.35rem;
+			float: left;
+			margin-left: 0.1rem;
+		}
+		.number::-webkit-input-placeholder{
+       		color: #817464;
+        	font-size: 0.5rem;
+		}
+		.number::-moz-placeholder{  
+		    color: #817464; 
+		    font-size: 0.5rem;       
+		}
+		.number:-ms-input-placeholder{ 
+		    color: #817464;
+		    font-size: 0.5rem;        
+		}
+		.prize_bg{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: #846A3A;
+			z-index: 1000;
+			opacity: 0.8;
+			display: none;
+		}
+		.prize_bg .yjzj{
+			width: 5.72rem;
+			height: 4.13rem;
+			background:url(images/ydh.png) no-repeat;
+		 	background-size: 100% 100%;
+			position: absolute;
+			left: 50%;
+			margin-left: -2.86rem;
+			top:50%;
+			margin-top: -2.065rem;
+		}
+		.prize_bg1{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: #846A3A;
+			z-index: 1000;
+			opacity: 0.8;
+			display: none;
+		}
+		.prize_bg1 .yjzj1{
+			width: 3.4rem;
+			height: 4.18rem;
+			background:url(images/dhcg.png) no-repeat;
+		 	background-size: 100% 100%;
+			position: absolute;
+			left: 50%;
+			margin-left: -1.7rem;
+			top:50%;
+			margin-top: -2.09rem;
+		}
+		.yan_tips{
+			font-size: 0.4rem;
+			color: #817464;
+			display: none;
+			width: 7.2rem;
+			position: absolute;
+			left: 50%;
+			margin-left:-4.6rem;
+			top:9rem;
+		}
+	</style>
+</head>
+<body style="position: relative;">
+	<div class="dui_prize">
+		<div class="prize_bg">
+			<div class="yjzj"></div>
+		</div>
+		<div class="prize_bg1">
+			<div class="yjzj1"></div>
+		</div>
+		<div class="dui_prize_logo">
+		</div>
+		<div class="dui_prize_text1">
+			
+		</div>
+		<div class="dui_prize_text2">
+			
+		</div>
+		<div class="yan_zheng">
+			<div class="yanzheng_box">
+				<input type="text" class="number" placeholder="由工作人员输入验证码" value="">
+				<div class="yanzheng_btn">
+				</div>
+			</div>
+		</div>
+		<div class="yan_tips">验证码输入错误，请重新输入</div>
+		<div class="weima_area">
+			
+		</div>
+	</div>
+		
+</body>
+</html>
